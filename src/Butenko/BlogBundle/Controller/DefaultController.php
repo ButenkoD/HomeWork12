@@ -11,9 +11,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array('name' => 'sss'));
     }
 
     public function createAction()

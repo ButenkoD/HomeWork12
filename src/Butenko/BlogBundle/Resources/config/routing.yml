@@ -1,5 +1,5 @@
 butenko_blog_homepage:
-    pattern:  /hello/{name}
+    pattern:  /hello
     defaults: { _controller: ButenkoBlogBundle:Default:index }
 butenko_blog_create:
     pattern: /create
@@ -13,3 +13,7 @@ butenko_blog_show:
 butenko_blog_show_by_tags:
     pattern: /showbytags
     defaults: { _controller: ButenkoBlogBundle:Default:showByTags }
+
+butenko_guest_book:
+    pattern: /guestbook
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:index }
