@@ -4,7 +4,7 @@ namespace Butenko\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
-use Butenko\BlogBundle\Entity\Tag;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Article
@@ -30,12 +30,13 @@ class Article
      */
     private $title;
 
-//    /**
-//     * @var \DateTime
-//     *
-//     * @ORM\Column(name="published", type="date")
-//     */
-//    private $published;
+    /**
+     * @var \DateTime
+     *
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(name="published", type="date")
+     */
+    private $published;
 
     /**
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
@@ -175,7 +176,7 @@ class Article
 
     public function removeTag(Tag $tag)
     {
-
+        $this->tags->removeElement($tag);
     }
 
     /**

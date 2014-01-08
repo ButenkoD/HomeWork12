@@ -23,6 +23,7 @@ class ArticleType extends AbstractType
                 'type' => new TagType(),
                 'allow_add'    => true,
                 'by_reference' => false,
+                'allow_delete' => true,
             ))
             ->add('create', 'submit');
     }
