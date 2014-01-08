@@ -10,3 +10,6 @@ butenko_blog_new_article:
 butenko_blog_show:
     pattern: /show/{title}
     defaults: { _controller: ButenkoBlogBundle:Default:show, title: null }
+butenko_blog_show_by_tags:
+    pattern: /showbytags
+    defaults: { _controller: ButenkoBlogBundle:Default:showByTags }

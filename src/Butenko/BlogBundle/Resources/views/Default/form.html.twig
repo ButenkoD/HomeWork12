@@ -1,14 +1,20 @@
-{#{{ form(form) }}#}
+
 
 {{ form_start(form) }}
-    {# render the task's only field: description #}
     {{ form_row(form.title) }}
 
-<h3>Tags</h3>
-<ul class="tags" data-prototype="{{ form_widget(form.tags.vars.prototype)|e }}">
-    {# iterate over each existing tag and render its only field: name #}
-    {% for tag in form.tags %}
-        <li>{{ form_row(tag.name) }}</li>
-    {% endfor %}
-</ul>
+    <h4>Category</h4>
+    {{ form_row(form.category) }}
+
+    <h4>Tags</h4>
+    <ul class="tags" data-prototype="{{ form_widget(form.tags.vars.prototype)|e }}">
+        {% for tag in form.tags %}
+            <li>{{ form_row(tag.name) }}</li>
+        {% endfor %}
+    </ul>
 {{ form_end(form) }}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+{% javascripts '@ButenkoBlogBundle/Resources/public/js/tags.js' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}

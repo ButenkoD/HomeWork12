@@ -44,7 +44,7 @@ class Article
     private $category;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="articles")
+     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="articles", cascade={"persist"})
      * @ORM\JoinTable(name="tags")
      */
     private $tags;
@@ -147,18 +147,18 @@ class Article
         return $this->category;
     }
 
-//    /**
-//     * Set tags
-//     *
-//     * @param array $tags
-//     * @return Article
-//     */
-//    public function setTags($tags)
-//    {
-//        $this->tags = $tags;
-//
-//        return $this;
-//    }
+    /**
+     * Set tags
+     *
+     * @param array $tags
+     * @return Article
+     */
+    public function setTags($tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
 
     /**
      * Add tag
@@ -171,6 +171,11 @@ class Article
         $this->tags[] = $tag;
 
         return $this;
+    }
+
+    public function removeTag(Tag $tag)
+    {
+
     }
 
     /**

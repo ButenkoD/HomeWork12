@@ -1,7 +1,11 @@
-Title {{ article.getTitle() }}
-</br>
-category {{ article.getCategory().getName }}
-</br>
-{% for tag in article.getTags() %}
-    tag {{ tag.getName }}
+{% for article in articles %}
+    Title {{ article.getTitle() }}
+    </br>
+    category {{ article.getCategory().getName }}
+    </br>
+    {% for tag in article.getTags() %}
+        tag {{ tag.getName }}
+    {% endfor %}
+    </br>
+    </br>
 {% endfor %}

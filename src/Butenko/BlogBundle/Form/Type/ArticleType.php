@@ -21,7 +21,8 @@ class ArticleType extends AbstractType
             ->add('category', new CategoryType())
             ->add('tags', 'collection', array(
                 'type' => new TagType(),
-                'allow_add'    => true
+                'allow_add'    => true,
+                'by_reference' => false,
             ))
             ->add('create', 'submit');
     }

@@ -54,14 +54,34 @@ class DefaultController extends Controller
 
     public function showAction($title)
     {
-        $article = $this->getDoctrine()
+        $articles[] = $this->getDoctrine()
             ->getRepository('ButenkoBlogBundle:Article')
             ->findOneBy(array(
                 'title' => $title
             ));
 
         return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
-            'article' => $article
+            'articles' => $articles
+        ));
+
+    }
+
+    public function showByTagsAction()
+    {
+        $tags = $this->getDoctrine()
+            ->getRepository('ButenkoBlogBundle:Tag')
+            ->findBy(array(
+                'name' => 'q'
+            ));
+        foreach ($tags as $tag) {
+            $articleArray = $tag->getArticles();
+            foreach ($articleArray as $article) {
+                $articles[] = $article;
+            }
+        }
+
+        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
+            'articles' => $articles
         ));
     }
 
