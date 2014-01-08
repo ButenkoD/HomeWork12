@@ -1,0 +1,7 @@
+Title {{ article.getTitle() }}
+</br>
+category {{ article.getCategory().getName }}
+</br>
+{% for tag in article.getTags() %}
+    tag {{ tag.getName }}
+{% endfor %}
