@@ -18,7 +18,14 @@ class ArticleType extends AbstractType
     {
         $builder
             ->add('title', 'text')
-            ->add('category', new CategoryType())
+//            ->add('category', new CategoryType())
+            ->add('category', 'entity', array(
+            'class' => 'ButenkoBlogBundle:Category',
+            'property' => 'name',
+            'multiple' => false,
+            'expanded' => false,
+            'empty_value' => ''
+            ))
             ->add('tags', 'collection', array(
                 'type' => new TagType(),
                 'allow_add'    => true,

@@ -2,5 +2,17 @@
 
 {% block content %}
     {{ form(form) }}
+
+    {% for guestRecord in guestRecords %}
+        {{ guestRecord.getName() }}
+        </br>
+        {{ guestRecord.getPublished()|date("m/d/Y") }}
+        </br>
+        {{ guestRecord.getEmail() }}
+        </br>
+        {{ guestRecord.getText() }}
+        </br>
+
+    {% endfor %}
 {% endblock %}
 

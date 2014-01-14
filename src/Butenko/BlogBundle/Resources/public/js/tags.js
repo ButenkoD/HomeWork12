@@ -8,13 +8,12 @@ jQuery(document).ready(function() {
     // Get the ul that holds the collection of tags
     $collectionHolder = $('ul.tags');
 
-    // add the "add a tag" anchor and li to the tags ul
-    $collectionHolder.append($newLinkLi);
-
-    // add a delete link to all of the existing tag form li elements
     $collectionHolder.find('li').each(function() {
         addTagFormDeleteLink($(this));
     });
+
+    // add the "add a tag" anchor and li to the tags ul
+    $collectionHolder.append($newLinkLi);
 
     // count the current form inputs we have (e.g. 2), use that as the new
     // index when inserting a new item (e.g. 2)
@@ -63,4 +62,3 @@ function addTagFormDeleteLink($tagFormLi) {
         $tagFormLi.remove();
     });
 }
-

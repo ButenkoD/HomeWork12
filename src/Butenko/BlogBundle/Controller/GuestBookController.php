@@ -11,21 +11,26 @@ class GuestBookController extends Controller
 {
     public function indexAction(Request $request)
     {
-        $guestrecord = new GuestRecord();
-        $form = $this->createForm(new GuestRecordType(), $guestrecord);
+        $guestRecord = new GuestRecord();
+        $form = $this->createForm(new GuestRecordType(), $guestRecord);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()
                 ->getManager();
-            $em->persist($guestrecord);
+            $em->persist($guestRecord);
             $em->flush();
 
             return $this->redirect($this->generateUrl('butenko_guest_book'));
         }
 
+        $guestRecords = $this->getDoctrine()
+            ->getRepository('ButenkoBlogBundle:GuestRecord')
+            ->findAll();
+
         return $this->render('ButenkoBlogBundle:GuestBook:index.html.twig', array(
             'form' => $form->createView(),
+            'guestRecords' => $guestRecords,
         ));
     }
 

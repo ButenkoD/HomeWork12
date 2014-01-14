@@ -4,6 +4,7 @@ namespace Butenko\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * GuestRecord
@@ -29,6 +30,14 @@ class GuestRecord
      * @Assert\NotBlank(message="You've forgot to type your name")
      */
     private $name;
+
+    /**
+     * @var \DateTime
+     *
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(name="published", type="date")
+     */
+    private $published;
 
     /**
      * @var string
@@ -79,6 +88,22 @@ class GuestRecord
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @param \DateTime $published
+     */
+    public function setPublished($published)
+    {
+        $this->published = $published;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getPublished()
+    {
+        return $this->published;
     }
 
     /**

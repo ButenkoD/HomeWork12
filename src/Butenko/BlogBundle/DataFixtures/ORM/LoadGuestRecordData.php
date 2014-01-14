@@ -17,13 +17,13 @@ class LoadGuestRecordData implements FixtureInterface
 {
     public function load(ObjectManager $manager)
     {
-        $records = Yaml::parse($this->getPostFile());
-        foreach($records['records'] as $record){
-            $guestRecord = new GuestRecord();
-            $guestRecord->setName($record['name'])
-                ->setEmail($record['email'])
-                ->setText($record['text']);
-        $manager->persist($guestRecord);
+        $guestRecords = Yaml::parse($this->getPostFile());
+        foreach($guestRecords['records'] as $guestRecord){
+            $guestRecordObject = new GuestRecord();
+            $guestRecordObject->setName($guestRecord['name'])
+                ->setEmail($guestRecord['email'])
+                ->setText($guestRecord['text']);
+        $manager->persist($guestRecordObject);
         }
 
         $manager->flush();

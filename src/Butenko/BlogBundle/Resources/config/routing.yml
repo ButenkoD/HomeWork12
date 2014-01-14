@@ -1,15 +1,12 @@
 butenko_blog_homepage:
-    pattern:  /hello
+    pattern:  /
     defaults: { _controller: ButenkoBlogBundle:Default:index }
-butenko_blog_create:
+butenko_blog_create_article:
     pattern: /create
-    defaults: { _controller: ButenkoBlogBundle:Default:create }
-butenko_blog_new_article:
-    pattern: /new
-    defaults: { _controller: ButenkoBlogBundle:Default:newArticle }
-butenko_blog_show:
+    defaults: { _controller: ButenkoBlogBundle:Default:createArticle }
+butenko_blog_show_article:
     pattern: /show/{title}
-    defaults: { _controller: ButenkoBlogBundle:Default:show, title: null }
+    defaults: { _controller: ButenkoBlogBundle:Default:showArticle, title: null }
 butenko_blog_show_by_tags:
     pattern: /showbytags
     defaults: { _controller: ButenkoBlogBundle:Default:showByTags }
