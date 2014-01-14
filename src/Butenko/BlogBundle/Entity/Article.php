@@ -50,12 +50,24 @@ class Article
      */
     private $tags;
 
-//    /**
-//     * @var string
-//     *
-//     * @ORM\Column(name="content", type="text")
-//     */
-//    private $content;
+    /**
+     * @var integer
+     * @ORM\Column(name="viewsNumber", type="integer")
+     */
+    private $viewsNumber;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text")
+     */
+    private $content;
+
+    /**
+     * @Gedmo\Slug(fields={"title"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    private $slug;
 
 //    /**
 //     * @var \stdClass
@@ -210,6 +222,38 @@ class Article
     public function getContent()
     {
         return $this->content;
+    }
+
+    /**
+     * @param int $viewsNumber
+     */
+    public function setViewsNumber($viewsNumber)
+    {
+        $this->viewsNumber = $viewsNumber;
+    }
+
+    /**
+     * @return int
+     */
+    public function getViewsNumber()
+    {
+        return $this->viewsNumber;
+    }
+
+    /**
+     * @param mixed $slug
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 
     /**

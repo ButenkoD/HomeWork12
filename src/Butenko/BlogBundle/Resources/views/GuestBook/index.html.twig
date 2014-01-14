@@ -1,6 +1,18 @@
 {% extends 'ButenkoBlogBundle::layout.html.twig' %}
 
-{% block content %}
+{% block header %}
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="{{ path('butenko_blog_homepage') }}">Home</a>
+                <a class="blog-nav-item" href="{{ path('butenko_about_me') }}">About me</a>
+                <a class="blog-nav-item active" href="{{ path('butenko_guest_book') }}">GuestBook</a>
+            </nav>
+        </div>
+    </div>
+{%  endblock %}
+
+{% block main %}
     {{ form(form) }}
 
     {% for guestRecord in guestRecords %}

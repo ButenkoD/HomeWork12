@@ -1,11 +1,42 @@
-{% for article in articles %}
-    Title {{ article.getTitle() }}
-    </br>
-    category {{ article.getCategory().getName }}
-    </br>
-    {% for tag in article.getTags() %}
-        tag {{ tag.getName }}
-    {% endfor %}
-    </br>
-    </br>
-{% endfor %}
+{% extends 'ButenkoBlogBundle::layout.html.twig' %}
+
+{% block container %}
+    <div class="container">
+
+        {%  block title %}
+            <div class="blog-header">
+                <h1 class="blog-title">My Blog</h1>
+                <p class="lead blog-description">HomeWork # 12 for GeekHub</p>
+            </div>
+        {% endblock %}
+
+        <div class="row">
+
+            {% block main %}
+            {%  endblock %}
+
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module">
+                    <h4>Last articles</h4>
+                    <ol class="list-unstyled">
+                        {{ render(controller('ButenkoBlogBundle:Default:lastArticles')) }}
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Most viewed articles</h4>
+                    <ol class="list-unstyled">
+                        {{ render(controller('ButenkoBlogBundle:Default:mostViewedArticles')) }}
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4>Last posts from GuestBook</h4>
+                    <ol class="list-unstyled">
+                        {{ render(controller('ButenkoBlogBundle:Default:lastGuestRecords')) }}
+                    </ol>
+                </div>
+            </div><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+{% endblock %}

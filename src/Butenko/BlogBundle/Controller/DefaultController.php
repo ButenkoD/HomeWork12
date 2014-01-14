@@ -13,7 +13,20 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array('name' => 'sss'));
+        $em = $this->getDoctrine()->getManager();
+
+        $query = $em->createQuery('SELECT a FROM ButenkoBlogBundle:Article a ORDER BY a.id DESC ');
+
+        $paginator  = $this->get('knp_paginator');
+        $articles = $paginator->paginate(
+            $query,
+            $this->get('request')->query->get('page', 1)/*page number*/,
+            $this->container->getParameter('articles_per_page')
+        );
+
+        return $this->render('ButenkoBlogBundle:Default:blog.html.twig', array(
+            'articles' => $articles
+        ));
     }
 
     public function createArticleAction(Request $request)
@@ -46,37 +59,107 @@ class DefaultController extends Controller
         ));
     }
 
-    public function showArticleAction($title)
+    public function showArticleAction($slug)
     {
-        $articles[] = $this->getDoctrine()
+        $article = $this->getDoctrine()
             ->getRepository('ButenkoBlogBundle:Article')
             ->findOneBy(array(
-                'title' => $title
+                'slug' => $slug
             ));
 
-        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
-            'articles' => $articles
-        ));
+        $article->setViewsNumber($article->getViewsNumber()+1);
+        $this->getDoctrine()->getManager()->flush();
 
+        return $this->render('ButenkoBlogBundle:Default:article.html.twig', array(
+            'article' => $article
+        ));
     }
 
-    public function showByTagsAction()
+    public function lastArticlesAction()
     {
-        $tags = $this->getDoctrine()
-            ->getRepository('ButenkoBlogBundle:Tag')
-            ->findBy(array(
-                'name' => 'q'
-            ));
-        foreach ($tags as $tag) {
-            $articleArray = $tag->getArticles();
-            foreach ($articleArray as $article) {
-                $articles[] = $article;
-            }
-        }
+        $query = $this->getDoctrine()
+            ->getManager()
+            ->createQuery('SELECT a FROM ButenkoBlogBundle:Article a ORDER BY a.published DESC')
+            ->setMaxResults($this->container->getParameter('last_articles'))
+        ;
 
-        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
+        return $this->render('ButenkoBlogBundle:Default:lastArticle.html.twig', array(
+            'articles' => $query->getResult()
+        ));
+    }
+
+    public function mostViewedArticlesAction()
+    {
+        $query = $this->getDoctrine()
+            ->getManager()
+//            ->createQuery('SELECT a FROM ButenkoBlogBundle:GuestRecord a ORDER BY a.viewsNumber ')
+            ->createQuery('SELECT a FROM ButenkoBlogBundle:Article a ORDER BY a.viewsNumber DESC')
+            ->setMaxResults($this->container->getParameter('most_viewed_articles'))
+        ;
+
+        return $this->render('ButenkoBlogBundle:Default:lastArticle.html.twig', array(
+            'articles' => $query->getResult()
+        ));
+    }
+
+    public function lastGuestRecordsAction()
+    {
+        $query = $this->getDoctrine()
+            ->getManager()
+            ->createQuery('SELECT p FROM ButenkoBlogBundle:GuestRecord p ORDER BY p.published DESC')
+            ->setMaxResults($this->container->getParameter('last_guest_records'))
+        ;
+
+        return $this->render('ButenkoBlogBundle:Default:lastGuestRecord.html.twig', array(
+            'records' => $query->getResult()
+        ));
+    }
+
+    public function showByCategoryAction($id)
+    {
+        $category = $this->getDoctrine()
+            ->getRepository('ButenkoBlogBundle:Category')
+            ->findOneBy(array('id' => $id));
+        $articles = $category->getArticles();
+
+        return $this->render('ButenkoBlogBundle:Default:showBy.html.twig', array(
             'articles' => $articles
         ));
     }
 
+    public function showByTagAction($id)
+    {
+        $tag = $this->getDoctrine()
+            ->getRepository('ButenkoBlogBundle:Tag')
+            ->findOneBy(array('id' => $id));
+        $articles = $tag->getArticles();
+
+        return $this->render('ButenkoBlogBundle:Default:showBy.html.twig', array(
+            'articles' => $articles
+        ));
+    }
+
+//    public function showByTagsAction()
+//    {
+//        $tags = $this->getDoctrine()
+//            ->getRepository('ButenkoBlogBundle:Tag')
+//            ->findBy(array(
+//                'name' => 'q'
+//            ));
+//        foreach ($tags as $tag) {
+//            $articleArray = $tag->getArticles();
+//            foreach ($articleArray as $article) {
+//                $articles[] = $article;
+//            }
+//        }
+//
+//        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
+//            'articles' => $articles
+//        ));
+//    }
+
+    public function aboutMeAction()
+    {
+        return $this->render('ButenkoBlogBundle:Default:aboutMe.html.twig');
+    }
 }

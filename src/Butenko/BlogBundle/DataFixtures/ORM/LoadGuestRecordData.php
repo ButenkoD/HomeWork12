@@ -33,4 +33,9 @@ class LoadGuestRecordData implements FixtureInterface
     {
         return __DIR__.'/../data/guestrecords.yml';
     }
+
+    public function getOrder()
+    {
+        return 1;
+    }
 } 

@@ -7,6 +7,10 @@
     <parameters>
         <parameter key="category.form_type">Butenko\BlogBundle\Form\Type\CategoryType</parameter>
         <parameter key="tag.form_type">Butenko\BlogBundle\Form\Type\TagType</parameter>
+        <parameter key="articles_per_page">5</parameter>
+        <parameter key="last_articles">5</parameter>
+        <parameter key="last_guest_records">6</parameter>
+        <parameter key="most_viewed_articles">4</parameter>
     </parameters>
 
     <!--<services>-->

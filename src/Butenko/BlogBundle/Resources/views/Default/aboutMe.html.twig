@@ -1,0 +1,36 @@
+{% extends 'ButenkoBlogBundle:Default:index.html.twig' %}
+
+{% block head %}
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="{{ path('butenko_blog_homepage') }}">Home</a>
+                <a class="blog-nav-item active" href="{{ path('butenko_about_me') }}">About me</a>
+                <a class="blog-nav-item" href="#">Press</a>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{%  block title %}
+    <div class="blog-header">
+        <h1 class="blog-title">About me</h1>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="col-sm-8 blog-main">
+
+        <div class="blog-post">
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+            <p>About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me About me about me about me about me </p>
+        </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+{% endblock %}

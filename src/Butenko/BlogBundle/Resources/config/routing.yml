@@ -5,11 +5,17 @@ butenko_blog_create_article:
     pattern: /create
     defaults: { _controller: ButenkoBlogBundle:Default:createArticle }
 butenko_blog_show_article:
-    pattern: /show/{title}
-    defaults: { _controller: ButenkoBlogBundle:Default:showArticle, title: null }
-butenko_blog_show_by_tags:
-    pattern: /showbytags
-    defaults: { _controller: ButenkoBlogBundle:Default:showByTags }
+    pattern: /show/{slug}
+    defaults: { _controller: ButenkoBlogBundle:Default:showArticle, slug: null }
+butenko_blog_show_by_category:
+    pattern: /showbycategory/{id}
+    defaults: { _controller: ButenkoBlogBundle:Default:showByCategory, id: null}
+butenko_blog_show_by_tag:
+        pattern: /showbytag/{id}
+        defaults: { _controller: ButenkoBlogBundle:Default:showByTag, id: null}
+butenko_about_me:
+    pattern: about-me
+    defaults: { _controller: ButenkoBlogBundle:Default:aboutMe}
 
 butenko_guest_book:
     pattern: /guestbook

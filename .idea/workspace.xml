@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e68d8b6-6601-4510-88c4-f408bb5e1dd6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/gr.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guestrecords.yml" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guestrecords.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook/index.html.twig" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/public/js/tags.js" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/public/js/tags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeekHub-HomeWork12.iws" />
@@ -40,26 +42,47 @@
       <file leaf-file-name="Article.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="21" selection-start="715" selection-end="833" vertical-scroll-proportion="-0.0" vertical-offset="615" max-vertical-offset="3645">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="30" selection-start="741" selection-end="741" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="705">
-              <folding />
+            <state line="65" column="0" selection-start="1255" selection-end="1370" vertical-scroll-proportion="-8.078431" vertical-offset="98" max-vertical-offset="1965">
+              <folding>
+                <element signature="e#167#219#0" expanded="false" />
+                <element signature="e#240#383#0" expanded="false" />
+                <element signature="e#406#503#0" expanded="false" />
+                <element signature="e#529#660#0" expanded="false" />
+                <element signature="e#690#841#0" expanded="false" />
+                <element signature="e#870#1003#0" expanded="false" />
+                <element signature="e#1028#1114#0" expanded="false" />
+                <element signature="e#1372#1381#0" expanded="false" />
+                <element signature="e#1502#1588#0" expanded="false" />
+                <element signature="e#1594#1650#0" expanded="false" />
+                <element signature="e#1655#1716#0" expanded="false" />
+                <element signature="e#1722#1808#0" expanded="false" />
+                <element signature="e#1813#1911#0" expanded="false" />
+                <element signature="e#1917#1975#0" expanded="false" />
+                <element signature="e#1980#2047#0" expanded="false" />
+                <element signature="e#2053#2150#0" expanded="false" />
+                <element signature="e#2155#2269#0" expanded="false" />
+                <element signature="e#2275#2340#0" expanded="false" />
+                <element signature="e#2345#2420#0" expanded="false" />
+                <element signature="e#2426#2521#0" expanded="false" />
+                <element signature="e#2526#2636#0" expanded="false" />
+                <element signature="e#2642#2706#0" expanded="false" />
+                <element signature="e#2711#2784#0" expanded="false" />
+                <element signature="e#2790#2873#0" expanded="false" />
+                <element signature="e#2980#3057#0" expanded="false" />
+                <element signature="e#3062#3159#0" expanded="false" />
+                <element signature="e#3165#3254#0" expanded="false" />
+                <element signature="e#3260#3315#0" expanded="false" />
+                <element signature="e#3320#3385#0" expanded="false" />
+                <element signature="e#3391#3481#0" expanded="false" />
+                <element signature="e#3598#3658#0" expanded="false" />
+                <element signature="e#3663#3734#0" expanded="false" />
+                <element signature="e#3892#3922#0" expanded="false" />
+                <element signature="e#3927#4006#0" expanded="false" />
+                <element signature="e#4239#4328#0" expanded="false" />
+                <element signature="e#4333#4431#0" expanded="false" />
+                <element signature="e#4437#4498#0" expanded="false" />
+                <element signature="e#4503#4570#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +90,57 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="13" column="27" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="0" selection-start="4560" selection-end="5135" vertical-scroll-proportion="-16.125" vertical-offset="1728" max-vertical-offset="2565">
+              <folding>
+                <element signature="e#49#106#0" expanded="true" />
+                <marker date="1389732977076" expanded="true" signature="485:545" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+                <marker date="1389732977076" expanded="true" signature="2478:2545" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+                <marker date="1389732977076" expanded="true" signature="2935:3003" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+                <marker date="1389732977076" expanded="true" signature="3034:3103" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+                <marker date="1389732977076" expanded="true" signature="3496:3567" placeholder="SELECT p FRO..ButenkoBlogBundle..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tag.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="615">
+              <folding>
+                <element signature="e#128#176#0" expanded="false" />
+                <element signature="e#193#336#0" expanded="false" />
+                <element signature="e#359#455#0" expanded="false" />
+                <element signature="e#480#555#0" expanded="false" />
+                <element signature="e#584#667#0" expanded="false" />
+                <element signature="e#673#729#0" expanded="false" />
+                <element signature="e#734#795#0" expanded="false" />
+                <element signature="e#801#881#0" expanded="false" />
+                <element signature="e#886#980#0" expanded="false" />
+                <element signature="e#986#1043#0" expanded="false" />
+                <element signature="e#1048#1113#0" expanded="false" />
+                <element signature="e#1119#1207#0" expanded="false" />
+                <element signature="e#1212#1322#0" expanded="false" />
+                <element signature="e#1328#1389#0" expanded="false" />
+                <element signature="e#1394#1467#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showBy.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/showBy.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.7281553" vertical-offset="0" max-vertical-offset="824">
               <folding />
             </state>
           </provider>
@@ -76,25 +149,59 @@
       <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="593" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1545">
+            <state line="87" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="615">
+              <folding>
+                <element signature="e#128#181#0" expanded="false" />
+                <element signature="e#203#346#0" expanded="false" />
+                <element signature="e#369#465#0" expanded="false" />
+                <element signature="e#490#568#0" expanded="false" />
+                <element signature="e#597#680#0" expanded="false" />
+                <element signature="e#686#742#0" expanded="false" />
+                <element signature="e#747#808#0" expanded="false" />
+                <element signature="e#814#899#0" expanded="false" />
+                <element signature="e#904#998#0" expanded="false" />
+                <element signature="e#1004#1061#0" expanded="false" />
+                <element signature="e#1066#1131#0" expanded="false" />
+                <element signature="e#1137#1229#0" expanded="false" />
+                <element signature="e#1234#1344#0" expanded="false" />
+                <element signature="e#1350#1410#0" expanded="false" />
+                <element signature="e#1415#1488#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuestBookController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuestRecord.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php">
+      <file leaf-file-name="lastArticle.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/lastArticle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2400">
+            <state line="3" column="4" selection-start="132" selection-end="132" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="569" selection-end="606" vertical-scroll-proportion="0.2619325" vertical-offset="0" max-vertical-offset="1245">
+            <state line="18" column="0" selection-start="492" selection-end="492" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/blog.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="1741" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -120,33 +227,46 @@
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/CategoryType.php" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/TagType.php" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/GuestRecordType.php" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guest_record.yml" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/record.yml" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guestrecords.yml" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/gr.yml" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook/index.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/public/js/tags.js" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php" />
-        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/assetic.yml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/blog.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadTagData.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/tag.yml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadArticleData.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/aboutMe.html.twig" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/article.yml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/article.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/last.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/lastGuestRecord.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/lastArticle.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/blog.html.twig" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/showBy.html.twig" />
       </list>
     </option>
   </component>
@@ -199,6 +319,210 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ico" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,11 +618,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeekHub-HomeWork12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Butenko" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,36 +679,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeekHub-HomeWork12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GeekHub-HomeWork12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Butenko" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BlogBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Type" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,11 +838,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM" />
       <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data" />
       <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures" />
       <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook" />
     </key>
   </component>
   <component name="RunManager">
@@ -591,97 +911,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/TagType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="498" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/CategoryType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="18" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="78" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="203" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="12" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="78" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="61" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1545" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/services.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="831" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
@@ -702,64 +931,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="905" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DependencyInjection/ButenkoBlogExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="866" selection-end="866" vertical-scroll-proportion="0.37457433" vertical-offset="0" max-vertical-offset="881" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="498" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/TagType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="690" selection-end="690" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="7" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="250" selection-end="250" vertical-scroll-proportion="0.17462166" vertical-offset="0" max-vertical-offset="859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="191" selection-end="191" vertical-scroll-proportion="0.22083806" vertical-offset="0" max-vertical-offset="883" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="72" selection-start="937" selection-end="937" vertical-scroll-proportion="0.3405018" vertical-offset="0" max-vertical-offset="837" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension/Core.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guestrecords.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/GuestRecordType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="66" selection-start="835" selection-end="835" vertical-scroll-proportion="0.4540163" vertical-offset="0" max-vertical-offset="859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="12" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.98301244" vertical-offset="152" max-vertical-offset="1245" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
@@ -777,95 +951,347 @@
         <state line="13" column="25" selection-start="325" selection-end="325" vertical-scroll-proportion="0.22083806" vertical-offset="0" max-vertical-offset="883" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="643" selection-end="643" vertical-scroll-proportion="0.30646992" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="169" selection-end="175" vertical-scroll-proportion="0.18232045" vertical-offset="0" max-vertical-offset="905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/GuestBook/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="121" selection-end="121" vertical-scroll-proportion="0.08731083" vertical-offset="0" max-vertical-offset="859" />
+        <state line="7" column="39" selection-start="303" selection-end="303" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/twitter/bootstrap/docs/examples/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="44" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.5064028" vertical-offset="0" max-vertical-offset="859" />
+        <state line="39" column="12" selection-start="0" selection-end="9234" vertical-scroll-proportion="0.54611653" vertical-offset="135" max-vertical-offset="2655">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/CategoryType.php">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="514" selection-end="514" vertical-scroll-proportion="0.27939466" vertical-offset="0" max-vertical-offset="859" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Category.php">
+    <entry file="file://$PROJECT_DIR$/app/config/assetic.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="593" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1545">
+        <state line="15" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twitter/bootstrap/docs/assets/ico/apple-touch-icon-144-precomposed.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twitter/bootstrap/docs/assets/ico/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="791" selection-end="791" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/guestrecords.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="54" selection-start="764" selection-end="764" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="600">
+          <folding>
+            <element signature="e#135#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadArticleData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="50" selection-start="797" selection-end="797" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <element signature="e#6#85#0" expanded="false" />
+            <element signature="e#135#192#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.13590033" vertical-offset="0" max-vertical-offset="883">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadTagData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="658" selection-end="658" vertical-scroll-proportion="0.33178115" vertical-offset="0" max-vertical-offset="859">
+          <folding>
+            <element signature="e#135#192#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/tag.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="82" selection-end="82" vertical-scroll-proportion="0.09944751" vertical-offset="0" max-vertical-offset="905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/aboutMe.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="12" selection-start="2036" selection-end="2036" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="92" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.8810872" vertical-offset="557" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="64" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.3492433" vertical-offset="0" max-vertical-offset="859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/article.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="569" selection-end="569" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/article.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="339" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1380">
+          <folding>
+            <marker date="1389721128260" expanded="true" signature="-1:-1" placeholder="articles:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="32" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="1260">
+          <folding>
+            <element signature="e#254#397#0" expanded="false" />
+            <element signature="e#420#583#0" expanded="false" />
+            <element signature="e#608#739#0" expanded="false" />
+            <element signature="e#769#993#0" expanded="false" />
+            <element signature="e#1019#1163#0" expanded="false" />
+            <element signature="e#1531#1587#0" expanded="false" />
+            <element signature="e#1592#1653#0" expanded="false" />
+            <element signature="e#1659#1747#0" expanded="false" />
+            <element signature="e#1752#1846#0" expanded="false" />
+            <element signature="e#1852#1909#0" expanded="false" />
+            <element signature="e#1914#1979#0" expanded="false" />
+            <element signature="e#1985#2031#0" expanded="false" />
+            <element signature="e#2036#2127#0" expanded="false" />
+            <element signature="e#2133#2169#0" expanded="false" />
+            <element signature="e#2174#2249#0" expanded="false" />
+            <element signature="e#2255#2345#0" expanded="false" />
+            <element signature="e#2350#2448#0" expanded="false" />
+            <element signature="e#2454#2512#0" expanded="false" />
+            <element signature="e#2517#2584#0" expanded="false" />
+            <element signature="e#2590#2678#0" expanded="false" />
+            <element signature="e#2683#2777#0" expanded="false" />
+            <element signature="e#2783#2840#0" expanded="false" />
+            <element signature="e#2845#2910#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/lastGuestRecord.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="17" selection-start="997" selection-end="997" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="21" selection-start="715" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="3645">
+        <state line="65" column="0" selection-start="1255" selection-end="1370" vertical-scroll-proportion="-8.078431" vertical-offset="98" max-vertical-offset="1965">
+          <folding>
+            <element signature="e#167#219#0" expanded="false" />
+            <element signature="e#240#383#0" expanded="false" />
+            <element signature="e#406#503#0" expanded="false" />
+            <element signature="e#529#660#0" expanded="false" />
+            <element signature="e#690#841#0" expanded="false" />
+            <element signature="e#870#1003#0" expanded="false" />
+            <element signature="e#1028#1114#0" expanded="false" />
+            <element signature="e#1372#1381#0" expanded="false" />
+            <element signature="e#1502#1588#0" expanded="false" />
+            <element signature="e#1594#1650#0" expanded="false" />
+            <element signature="e#1655#1716#0" expanded="false" />
+            <element signature="e#1722#1808#0" expanded="false" />
+            <element signature="e#1813#1911#0" expanded="false" />
+            <element signature="e#1917#1975#0" expanded="false" />
+            <element signature="e#1980#2047#0" expanded="false" />
+            <element signature="e#2053#2150#0" expanded="false" />
+            <element signature="e#2155#2269#0" expanded="false" />
+            <element signature="e#2275#2340#0" expanded="false" />
+            <element signature="e#2345#2420#0" expanded="false" />
+            <element signature="e#2426#2521#0" expanded="false" />
+            <element signature="e#2526#2636#0" expanded="false" />
+            <element signature="e#2642#2706#0" expanded="false" />
+            <element signature="e#2711#2784#0" expanded="false" />
+            <element signature="e#2790#2873#0" expanded="false" />
+            <element signature="e#2980#3057#0" expanded="false" />
+            <element signature="e#3062#3159#0" expanded="false" />
+            <element signature="e#3165#3254#0" expanded="false" />
+            <element signature="e#3260#3315#0" expanded="false" />
+            <element signature="e#3320#3385#0" expanded="false" />
+            <element signature="e#3391#3481#0" expanded="false" />
+            <element signature="e#3598#3658#0" expanded="false" />
+            <element signature="e#3663#3734#0" expanded="false" />
+            <element signature="e#3892#3922#0" expanded="false" />
+            <element signature="e#3927#4006#0" expanded="false" />
+            <element signature="e#4239#4328#0" expanded="false" />
+            <element signature="e#4333#4431#0" expanded="false" />
+            <element signature="e#4437#4498#0" expanded="false" />
+            <element signature="e#4503#4570#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="691" selection-end="691" vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/data/category.yml">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/lastArticle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.050962627" vertical-offset="0" max-vertical-offset="883" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadGuestRecordData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="808" selection-end="808" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/DataFixtures/ORM/LoadCategoryData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="708" selection-end="708" vertical-scroll-proportion="0.36670548" vertical-offset="0" max-vertical-offset="859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+        <state line="3" column="4" selection-start="132" selection-end="132" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/GuestRecord.php">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/GuestBookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2400">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/public/js/tags.js">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="355" selection-end="355" vertical-scroll-proportion="-0.0022650056" vertical-offset="152" max-vertical-offset="1035">
+        <state line="18" column="0" selection-start="492" selection-end="492" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Form/Type/ArticleType.php">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="741" selection-end="741" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="705">
-          <folding />
+        <state line="87" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="615">
+          <folding>
+            <element signature="e#128#181#0" expanded="false" />
+            <element signature="e#203#346#0" expanded="false" />
+            <element signature="e#369#465#0" expanded="false" />
+            <element signature="e#490#568#0" expanded="false" />
+            <element signature="e#597#680#0" expanded="false" />
+            <element signature="e#686#742#0" expanded="false" />
+            <element signature="e#747#808#0" expanded="false" />
+            <element signature="e#814#899#0" expanded="false" />
+            <element signature="e#904#998#0" expanded="false" />
+            <element signature="e#1004#1061#0" expanded="false" />
+            <element signature="e#1066#1131#0" expanded="false" />
+            <element signature="e#1137#1229#0" expanded="false" />
+            <element signature="e#1234#1344#0" expanded="false" />
+            <element signature="e#1350#1410#0" expanded="false" />
+            <element signature="e#1415#1488#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="643" selection-end="643" vertical-scroll-proportion="0.31431898" vertical-offset="0" max-vertical-offset="930">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#128#176#0" expanded="false" />
+            <element signature="e#193#336#0" expanded="false" />
+            <element signature="e#359#455#0" expanded="false" />
+            <element signature="e#480#555#0" expanded="false" />
+            <element signature="e#584#667#0" expanded="false" />
+            <element signature="e#673#729#0" expanded="false" />
+            <element signature="e#734#795#0" expanded="false" />
+            <element signature="e#801#881#0" expanded="false" />
+            <element signature="e#886#980#0" expanded="false" />
+            <element signature="e#986#1043#0" expanded="false" />
+            <element signature="e#1048#1113#0" expanded="false" />
+            <element signature="e#1119#1207#0" expanded="false" />
+            <element signature="e#1212#1322#0" expanded="false" />
+            <element signature="e#1328#1389#0" expanded="false" />
+            <element signature="e#1394#1467#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="13" column="27" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="569" selection-end="606" vertical-scroll-proportion="0.2619325" vertical-offset="0" max-vertical-offset="1245">
+        <state line="141" column="0" selection-start="4560" selection-end="5135" vertical-scroll-proportion="-16.125" vertical-offset="1728" max-vertical-offset="2565">
+          <folding>
+            <element signature="e#49#106#0" expanded="true" />
+            <marker date="1389732977076" expanded="true" signature="485:545" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+            <marker date="1389732977076" expanded="true" signature="2478:2545" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+            <marker date="1389732977076" expanded="true" signature="2935:3003" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+            <marker date="1389732977076" expanded="true" signature="3034:3103" placeholder="SELECT a FRO..ButenkoBlogBundle..." />
+            <marker date="1389732977076" expanded="true" signature="3496:3567" placeholder="SELECT p FRO..ButenkoBlogBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/blog.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1741" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Butenko/BlogBundle/Resources/views/Default/showBy.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.7281553" vertical-offset="0" max-vertical-offset="824">
           <folding />
         </state>
       </provider>

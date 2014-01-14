@@ -1,0 +1,33 @@
+{% extends 'ButenkoBlogBundle:Default:index.html.twig' %}
+
+{% block head %}
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="{{ path('butenko_blog_homepage') }}">Home</a>
+                <a class="blog-nav-item" href="{{ path('butenko_about_me') }}">About me</a>
+                <a class="blog-nav-item" href="#">Press</a>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">
+                    <a href="{{ path('butenko_blog_show_article', {'slug': article.getSlug()} ) }}">
+                        {{ article.getTitle() }}
+                    </a>
+                </h2>
+                <p class="blog-post-meta">{{ article.getPublished()| date("m/d/Y") }}</p>
+                <p> Category: <a href="{{ path('butenko_about_me') }}">{{ article.getCategory().getName }}</a></p>
+
+                <div class="well">
+                    <p> {{ article.getContent() }} </p>
+                </div>
+            </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+{% endblock %}
