@@ -4,7 +4,6 @@ namespace Butenko\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Butenko\BlogBundle\Entity\Article;
-use Butenko\BlogBundle\Entity\Category;
 use Butenko\BlogBundle\Entity\Tag;
 use Butenko\BlogBundle\Form\Type\ArticleType;
 use Symfony\Component\HttpFoundation\Request;
@@ -106,7 +105,7 @@ class DefaultController extends Controller
     {
         $query = $this->getDoctrine()
             ->getManager()
-            ->createQuery('SELECT p FROM ButenkoBlogBundle:GuestRecord p ORDER BY p.published DESC')
+            ->createQuery('SELECT p FROM ButenkoBlogBundle:GuestRecord p ORDER BY p.published DESC, p.id DESC')
             ->setMaxResults($this->container->getParameter('last_guest_records'))
         ;
 
@@ -138,25 +137,6 @@ class DefaultController extends Controller
             'articles' => $articles
         ));
     }
-
-//    public function showByTagsAction()
-//    {
-//        $tags = $this->getDoctrine()
-//            ->getRepository('ButenkoBlogBundle:Tag')
-//            ->findBy(array(
-//                'name' => 'q'
-//            ));
-//        foreach ($tags as $tag) {
-//            $articleArray = $tag->getArticles();
-//            foreach ($articleArray as $article) {
-//                $articles[] = $article;
-//            }
-//        }
-//
-//        return $this->render('ButenkoBlogBundle:Default:index.html.twig', array(
-//            'articles' => $articles
-//        ));
-//    }
 
     public function aboutMeAction()
     {

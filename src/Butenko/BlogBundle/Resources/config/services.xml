@@ -11,6 +11,7 @@
         <parameter key="last_articles">5</parameter>
         <parameter key="last_guest_records">6</parameter>
         <parameter key="most_viewed_articles">4</parameter>
+        <parameter key="guest_records_per_page">8</parameter>
     </parameters>
 
     <!--<services>-->

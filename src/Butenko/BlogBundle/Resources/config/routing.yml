@@ -20,3 +20,9 @@ butenko_about_me:
 butenko_guest_book:
     pattern: /guestbook
     defaults: { _controller: ButenkoBlogBundle:GuestBook:index }
+butenko_guest_record:
+    pattern: /guestbook/show/{slug}
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:show }
+butenko_guest_record_remove:
+    pattern: /guestbook/remove/{slug}
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:remove }

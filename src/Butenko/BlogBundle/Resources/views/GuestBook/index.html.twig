@@ -1,6 +1,6 @@
 {% extends 'ButenkoBlogBundle::layout.html.twig' %}
 
-{% block header %}
+{% block head %}
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
@@ -12,19 +12,28 @@
     </div>
 {%  endblock %}
 
-{% block main %}
+{% block container %}
     {{ form(form) }}
 
     {% for guestRecord in guestRecords %}
-        {{ guestRecord.getName() }}
-        </br>
-        {{ guestRecord.getPublished()|date("m/d/Y") }}
-        </br>
-        {{ guestRecord.getEmail() }}
-        </br>
-        {{ guestRecord.getText() }}
-        </br>
+
+        <div class="well">
+            <h4>
+                {{ guestRecord.getName() }}
+            </h4>
+            <p class="blog-post-meta">{{ guestRecord.getPublished()| date("m/d/Y") }}</p>
+            <p>
+                <a href="{{ path('butenko_guest_record', {'slug': guestRecord.getSlug()} ) }}">
+                    View more
+                </a>
+
+            </p>
+            <p> {{ guestRecord.getText() }} </p>
+        </div>
 
     {% endfor %}
-{% endblock %}
 
+    <ul class="pager">
+        {{ knp_pagination_render(guestRecords) }}
+    </ul>
+{% endblock %}
