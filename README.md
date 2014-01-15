@@ -4,6 +4,6 @@ cd /path
 
 git checkout blog
 
-composer.update
+composer update
 
 sudo php bin/reload.php
