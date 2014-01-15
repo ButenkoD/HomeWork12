@@ -1,0 +1,44 @@
+{% block head %}
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="{{ path('butenko_blog_homepage') }}">Home</a>
+                <a class="blog-nav-item" href="{{ path('butenko_about_me') }}">About me</a>
+                <a class="blog-nav-item" href="{{ path('butenko_guest_book') }}">GuestBook</a>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{% block title %}
+    <h1 class="blog-title">New article</h1>
+    <p class="lead blog-description">Fill required fields</p>
+{% endblock %}
+
+{% block container %}
+
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_row(form.title) }}
+        {{ form_row(form.category) }}
+        {{ form_row(form.content) }}
+
+        <h5>Tags</h5>
+        <ul class="tags" data-prototype="{{ form_widget(form.tags.vars.prototype)|e }}">
+            {# iterate over each existing tag and render its only field: name #}
+            {% for tag in form.tags %}
+                <li>{{ form_row(tag.name) }}</li>
+            {% endfor %}
+        </ul>
+
+    {{ form_end(form) }}
+
+{% endblock %}
+
+{% block javascripts %}
+    {#<script src="{{ asset('myjs.js') }}"></script>#}
+    {#<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>#}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    {% javascripts '@ButenkoBlogBundle/Resources/public/js/tags.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
