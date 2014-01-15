@@ -39,7 +39,7 @@ class DefaultController extends Controller
         $form = $this->createForm(new ArticleType(), $article);
         $form->handleRequest($request);
 
-        var_dump($form->isValid());
+//        var_dump($form->isValid());
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
@@ -49,7 +49,7 @@ class DefaultController extends Controller
             $em->flush();
 
             return $this->redirect($this->generateUrl('butenko_blog_show_article', array(
-                'title' => $article->getTitle()
+                'slug' => $article->getSlug()
             )));
         }
 

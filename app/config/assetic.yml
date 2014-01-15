@@ -18,3 +18,8 @@ assetic:
             filters:
                 - cssrewrite
             output: mystyle.css
+        js:
+            inputs:
+                - %kernel.root_dir%/../components/jquery/jquery.min.js
+                - %kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/bootstrap.min.js
+            output: myjs.js
