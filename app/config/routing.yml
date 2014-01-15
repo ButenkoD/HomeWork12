@@ -1,0 +1,4 @@
+butenko_blog:
+    resource: "@ButenkoBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
