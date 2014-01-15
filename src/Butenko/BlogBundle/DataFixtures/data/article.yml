@@ -1,6 +1,6 @@
 articles:
     1:
-        title: Andrew
+        title: First article in blog
         category: category1
         tag:
             - tag1
