@@ -1,0 +1,39 @@
+{% extends 'ButenkoBlogBundle::layout.html.twig' %}
+
+{% block head %}
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item" href="{{ path('butenko_blog_homepage') }}">Home</a>
+                <a class="blog-nav-item" href="{{ path('butenko_about_me') }}">About me</a>
+                <a class="blog-nav-item active" href="{{ path('butenko_guest_book') }}">GuestBook</a>
+            </nav>
+        </div>
+    </div>
+{%  endblock %}
+
+{% block container %}
+    {{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    {% for guestRecord in guestRecords %}
+
+        <div class="well">
+            <h4>
+                {{ guestRecord.getName() }}
+            </h4>
+            <p class="blog-post-meta">{{ guestRecord.getPublished()| date("m/d/Y") }}</p>
+            <p>
+                <a href="{{ path('butenko_guest_record', {'slug': guestRecord.getSlug()} ) }}">
+                    View more
+                </a>
+
+            </p>
+            <p> {{ guestRecord.getText() }} </p>
+        </div>
+
+    {% endfor %}
+
+    <ul class="pager">
+        {{ knp_pagination_render(guestRecords) }}
+    </ul>
+{% endblock %}

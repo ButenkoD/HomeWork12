@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="category.form_type">Butenko\BlogBundle\Form\Type\CategoryType</parameter>
+        <parameter key="tag.form_type">Butenko\BlogBundle\Form\Type\TagType</parameter>
+        <parameter key="articles_per_page">5</parameter>
+        <parameter key="last_articles">5</parameter>
+        <parameter key="last_guest_records">6</parameter>
+        <parameter key="most_viewed_articles">4</parameter>
+        <parameter key="guest_records_per_page">8</parameter>
+    </parameters>
+
+    <!--<services>-->
+        <!--<service id="butenko.form.type.category" class="%category.form_type%">-->
+            <!--<tag name="form.type" alias="category" />-->
+        <!--</service>-->
+
+        <!--<service id="butenko.form.type.tag" class="%tag.form_type%">-->
+            <!--<tag name="form.type" alias="tag" />-->
+        <!--</service>-->
+    <!--</services>-->
+</container>

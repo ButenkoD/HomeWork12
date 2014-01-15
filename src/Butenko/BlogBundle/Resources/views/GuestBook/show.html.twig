@@ -1,0 +1,20 @@
+{% extends 'ButenkoBlogBundle:GuestBook:index.html.twig' %}
+
+{% block container %}
+
+        <div class="well">
+            <h4>
+                {{ guestRecord.getName() }}
+            </h4>
+            <p> {{ guestRecord.getEmail() }} </p>
+            <p class="blog-post-meta">{{ guestRecord.getPublished()| date("m/d/Y") }}</p>
+            <p>
+                <a href="{{ path('butenko_guest_record_remove', {'slug': guestRecord.getSlug()} ) }}">
+                    Delete
+                </a>
+
+            </p>
+            <p> {{ guestRecord.getText() }} </p>
+        </div>
+
+{% endblock %}
