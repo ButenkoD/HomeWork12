@@ -13,19 +13,19 @@ articles:
         tag:
             - tag2
             - tag3
-        viewsNumber: 2
+        viewsNumber: 7
         content: In YAML, the special @my_mailer syntax tells the container to look for a service named my_mailer and to pass that object into the constructor of NewsletterManager. In this case, however, the specified service my_mailer must exist. If it does not, an exception will be thrown. You can mark your dependencies as optional - this will be discussed in the next section.              Using references is a very powerful tool that allows you to create independent service classes with well-defined dependencies. In this example, the newsletter_manager service needs the my_mailer service in order to function. When you define this dependency in the service container, the container takes care of all the work of instantiating the classes.
     3:
         title: Foo
-        category: category3
+        category: category0
         tag:
-            - tag2
+            - tag0
             - tag3
-        viewsNumber: 2
+        viewsNumber: 5
         content: In YAML, the special @my_mailer syntax tells the container to look for a service named my_mailer and to pass that object into the constructor of NewsletterManager. In this case, however, the specified service my_mailer must exist. If it does not, an exception will be thrown. You can mark your dependencies as optional - this will be discussed in the next section.              Using references is a very powerful tool that allows you to create independent service classes with well-defined dependencies. In this example, the newsletter_manager service needs the my_mailer service in order to function. When you define this dependency in the service container, the container takes care of all the work of instantiating the classes.
     4:
         title: FooFoo
-        category: category3
+        category: category2
         tag:
             - tag2
             - tag3
@@ -35,9 +35,8 @@ articles:
         title: Bar
         category: category3
         tag:
-            - tag2
             - tag3
-        viewsNumber: 2
+        viewsNumber: 9
         content: Injecting dependencies into the constructor in this manner is an excellent way of ensuring that the dependency is available to use. If you have optional dependencies for a class, then "setter injection" may be a better option. This means injecting the dependency using a method call rather than through the constructor. The class would look like this:
     6:
         title: BarBar
@@ -45,43 +44,5 @@ articles:
         tag:
             - tag2
             - tag3
-        viewsNumber: 2
+        viewsNumber: 1
         content: The service container also supports an "expression" that allows you to inject very specific values into a service.              For example, suppose you have a third service (not shown here), called mailer_configuration, which has a getMailerMethod() method on it, which will return a string like sendmail based on some configuration. Remember that the first argument to the my_mailer service is the simple string sendmail:              But instead of hardcoding this, how could we get this value from the getMailerMethod() of the new mailer_configuration service? One way is to use an expression:
-
-
-#    3:
-#        title: Alex
-#        email: al@mail.ru
-#        text: The service container also supports an "expression" that allows you to inject very specific values into a service.              For example, suppose you have a third service (not shown here), called mailer_configuration, which has a getMailerMethod() method on it, which will return a string like sendmail based on some configuration. Remember that the first argument to the my_mailer service is the simple string sendmail:              But instead of hardcoding this, how could we get this value from the getMailerMethod() of the new mailer_configuration service? One way is to use an expression:
-#    4:
-#        title: Peter
-#        email: peter@mail.ru
-#        text: Injecting dependencies into the constructor in this manner is an excellent way of ensuring that the dependency is available to use. If you have optional dependencies for a class, then "setter injection" may be a better option. This means injecting the dependency using a method call rather than through the constructor. The class would look like this:
-#    5:
-#        title: Tom
-#        email: tom@mail.ru
-#        text: Handling file uploads with Doctrine entities is no different than handling any other file upload. In other words, you're free to move the file in your controller after handling a form submission. For examples of how to do this, see the file type reference page.
-#    6:
-#        title: DarkLord
-#        email: 666@mail.ru
-#        text: If you choose to, you can also integrate the file upload into your entity lifecycle (i.e. creation, update and removal). In this case, as your entity is created, updated, and removed from Doctrine, the file uploading and removal processing will take place automatically (without needing to do anything in your controller).
-#    7:
-#        title: Alice
-#        email: alice@mail.ru
-#        text: The Document entity has a name and it is associated with a file. The path property stores the relative path to the file and is persisted to the database. The getAbsolutePath() is a convenience method that returns the absolute path to the file while the getWebPath() is a convenience method that returns the web path, which can be used in a template to link to the uploaded file.
-#    8:
-#        title: Cat
-#        email: ct@mail.ru
-#        text: As you are using the File constraint, Symfony2 will automatically guess that the form field is a file upload input. That's why you did not have to set it explicitly when creating the form above (->add('file')).
-#    9:
-#        title: Stranger
-#        email: whatever@mail.ru
-#        text: An easy way to handle the file upload is to move it just before the entity is persisted and then set the path property accordingly. Start by calling a new upload() method on the Document class, which you'll create in a moment to handle the file upload:
-#    10:
-#        title: Mark
-#        email: m@mail.ru
-#        text: Even if this implementation works, it suffers from a major flaw: What if there is a problem when the entity is persisted? The file would have already moved to its final location even though the entity's path property didn't persist correctly.
-#    11:
-#        title: Lloyd
-#        email: asdf@mail.ru
-#        text: To avoid these issues, you should change the implementation so that the database operation and the moving of the file become atomic: if there is a problem persisting the entity or if the file cannot be moved, then nothing should happen.

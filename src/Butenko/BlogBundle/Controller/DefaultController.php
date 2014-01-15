@@ -74,7 +74,7 @@ class DefaultController extends Controller
     {
         $query = $this->getDoctrine()
             ->getManager()
-            ->createQuery('SELECT a FROM ButenkoBlogBundle:Article a ORDER BY a.published DESC')
+            ->createQuery('SELECT a FROM ButenkoBlogBundle:Article a ORDER BY a.published DESC, a.id DESC')
             ->setMaxResults($this->container->getParameter('last_articles'))
         ;
 
