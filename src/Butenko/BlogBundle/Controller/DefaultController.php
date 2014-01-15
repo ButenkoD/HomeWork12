@@ -5,6 +5,7 @@ namespace Butenko\BlogBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Butenko\BlogBundle\Entity\Article;
 use Butenko\BlogBundle\Entity\Tag;
+use Butenko\BlogBundle\Entity\Category;
 use Butenko\BlogBundle\Form\Type\ArticleType;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -30,11 +31,8 @@ class DefaultController extends Controller
 
     public function createArticleAction(Request $request)
     {
-//        $category = new Category();
-        $tag = new Tag();
         $article = new Article();
-//        $article->setCategory($category);
-        $article->addTag($tag);
+        $article->setViewsNumber(0);
 
         $form = $this->createForm(new ArticleType(), $article);
         $form->handleRequest($request);
@@ -44,8 +42,6 @@ class DefaultController extends Controller
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
-//            $em->persist($category);
-            $em->persist($tag);
             $em->flush();
 
             return $this->redirect($this->generateUrl('butenko_blog_show_article', array(

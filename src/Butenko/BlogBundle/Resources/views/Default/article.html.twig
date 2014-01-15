@@ -6,7 +6,7 @@
             <nav class="blog-nav">
                 <a class="blog-nav-item active" href="{{ path('butenko_blog_homepage') }}">Home</a>
                 <a class="blog-nav-item" href="{{ path('butenko_about_me') }}">About me</a>
-                <a class="blog-nav-item" href="#">Press</a>
+                <a class="blog-nav-item" href="{{ path('butenko_guest_book') }}">GuestBook</a>
             </nav>
         </div>
     </div>
@@ -27,6 +27,12 @@
                 <div class="well">
                     <p> {{ article.getContent() }} </p>
                 </div>
+                <p> Tags: </p>
+                {% for tag in article.getTags() %}
+                    <a href="{{ path('butenko_blog_show_by_tag', {'id':tag.getId()}) }}">
+                        {{ tag.getName }}
+                    </a>
+                {% endfor %}
             </div><!-- /.blog-post -->
 
     </div><!-- /.blog-main -->

@@ -5,6 +5,7 @@ namespace Butenko\BlogBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Article
@@ -25,7 +26,7 @@ class Article
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank(message="You've forgot to type title")
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
@@ -39,7 +40,7 @@ class Article
     private $published;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles", cascade={"persist"})
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     private $category;
@@ -58,7 +59,7 @@ class Article
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank(message="You've forgot to type content")
      * @ORM\Column(name="content", type="text")
      */
     private $content;

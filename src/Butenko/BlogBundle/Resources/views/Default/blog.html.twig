@@ -40,7 +40,7 @@
                 <div class="well">
                     <p> {{ article.getContent() }} </p>
                 </div>
-                <p> Tags </p>
+                <p> Tags: </p>
                 {% for tag in article.getTags() %}
                     <a href="{{ path('butenko_blog_show_by_tag', {'id':tag.getId()}) }}">
                             {{ tag.getName }}

@@ -18,20 +18,21 @@ class ArticleType extends AbstractType
     {
         $builder
             ->add('title', 'text')
-//            ->add('category', new CategoryType())
+//            ->add('category', new CategoryType(), array(
+//                'by_reference' => false
+//            ))
             ->add('category', 'entity', array(
             'class' => 'ButenkoBlogBundle:Category',
             'property' => 'name',
             'multiple' => false,
             'expanded' => false,
-            'empty_value' => ''
             ))
             ->add('content', 'textarea')
             ->add('tags', 'collection', array(
                 'type' => new TagType(),
                 'allow_add'    => true,
                 'by_reference' => false,
-                'allow_delete' => true,
+//                'allow_delete' => true,
             ))
             ->add('create', 'submit');
     }
