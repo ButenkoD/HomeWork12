@@ -26,6 +26,7 @@ class ArticleType extends AbstractType
             'expanded' => false,
             'empty_value' => ''
             ))
+            ->add('content', 'textarea')
             ->add('tags', 'collection', array(
                 'type' => new TagType(),
                 'allow_add'    => true,

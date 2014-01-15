@@ -13,7 +13,7 @@
 {%  endblock %}
 
 {% block container %}
-    {{ form(form) }}
+    {{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
 
     {% for guestRecord in guestRecords %}
 

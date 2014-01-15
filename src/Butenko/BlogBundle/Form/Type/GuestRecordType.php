@@ -19,7 +19,7 @@ class GuestRecordType extends AbstractType
         $builder
             ->add('name', 'text')
             ->add('email', 'email')
-            ->add('text', 'text')
+            ->add('text', 'textarea')
             ->add('create', 'submit');
     }
 

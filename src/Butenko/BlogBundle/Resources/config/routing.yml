@@ -13,6 +13,7 @@ butenko_blog_show_by_category:
 butenko_blog_show_by_tag:
         pattern: /showbytag/{id}
         defaults: { _controller: ButenkoBlogBundle:Default:showByTag, id: null}
+
 butenko_about_me:
     pattern: about-me
     defaults: { _controller: ButenkoBlogBundle:Default:aboutMe}
