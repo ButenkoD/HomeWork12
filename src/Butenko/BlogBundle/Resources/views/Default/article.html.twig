@@ -22,7 +22,9 @@
                     </a>
                 </h2>
                 <p class="blog-post-meta">{{ article.getPublished()| date("m/d/Y") }}</p>
-                <p> Category: <a href="{{ path('butenko_about_me') }}">{{ article.getCategory().getName }}</a></p>
+                <p> Category: <a href="{{ path('butenko_blog_show_by_category', {'id':article.getCategory().getId()}) }}">
+                        {{ article.getCategory().getName }}</a>
+                </p>
 
                 <div class="well">
                     <p> {{ article.getContent() }} </p>
