@@ -1,0 +1,29 @@
+butenko_blog_homepage:
+    pattern:  /
+    defaults: { _controller: ButenkoBlogBundle:Default:index }
+butenko_blog_create_article:
+    pattern: /create
+    defaults: { _controller: ButenkoBlogBundle:Default:createArticle }
+butenko_blog_show_article:
+    pattern: /show/{slug}
+    defaults: { _controller: ButenkoBlogBundle:Default:showArticle, slug: null }
+butenko_blog_show_by_category:
+    pattern: /showbycategory/{id}
+    defaults: { _controller: ButenkoBlogBundle:Default:showByCategory, id: null}
+butenko_blog_show_by_tag:
+        pattern: /showbytag/{id}
+        defaults: { _controller: ButenkoBlogBundle:Default:showByTag, id: null}
+
+butenko_about_me:
+    pattern: about-me
+    defaults: { _controller: ButenkoBlogBundle:Default:aboutMe}
+
+butenko_guest_book:
+    pattern: /guestbook
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:index }
+butenko_guest_record:
+    pattern: /guestbook/show/{slug}
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:show }
+butenko_guest_record_remove:
+    pattern: /guestbook/remove/{slug}
+    defaults: { _controller: ButenkoBlogBundle:GuestBook:remove }
